@@ -14,9 +14,11 @@ const Main = ( {navigation} ) => {
                 <Text>Map will be here</Text>
             </View>
             <View style = {[styles.searchBar, {flexDirection: "row"}]}>
-                <TextInput 
-                 placeholder = "Search for a destination"
-                style={{height: 40}}/>
+                <Button 
+                 title = "Search for a destination"
+                 onPress = {() => {
+                    navigation.navigate("LocationSearch")
+                }}/>
             </View>
             <View>
                 <View style = {styles.menu}>

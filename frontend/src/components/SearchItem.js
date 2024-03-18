@@ -1,6 +1,6 @@
 import {Text, View, TouchableOpacity, StyleSheet} from 'react-native';
 
-const HistoryItem = ({name, address, navigation}) => {
+const SearchItem = ({name, address, navigation}) => {
     
     return(
         <TouchableOpacity
@@ -12,7 +12,7 @@ const HistoryItem = ({name, address, navigation}) => {
                 <Text>{name}</Text>
                 <Text>{address}</Text>
             </View>
-            <Text> arrowicon </Text>
+            <Text> tripledot </Text>
         </TouchableOpacity>
     )
 
@@ -28,4 +28,4 @@ const styles = StyleSheet.create({
   });
 
 
-export default HistoryItem;
+export default SearchItem;
